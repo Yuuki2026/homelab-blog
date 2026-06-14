@@ -1,24 +1,17 @@
 site_name: Yuuki's Homelab
-site_url: https://yuuki2026.github.io/homelab-blog/
 
 theme:
   name: material
-  language: zh
-
-  palette:
-    - scheme: slate
-      primary: black
-      accent: green
 
   features:
-    - navigation.instant
-    - navigation.sections
-    - navigation.top
-    - toc.follow
-    - search.highlight
     - content.code.copy
 
-markdown_extensions:
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
+  palette:
+
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
