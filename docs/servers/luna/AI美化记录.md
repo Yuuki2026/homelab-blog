@@ -187,21 +187,29 @@ yuuki @Luna ~
 - 命令执行耗时统计
 - Nerd Font 图标渲染
 
-## 九、自定义登录 Banner
-### 原版图案
-```
-░█░░░█░█░█▀█░█▀█
-░█░░░█░█░█░█░█▀█
-░▀▀▀░▀▀▀░▀░▀░▀░▀
+## 九、美化prompt
+### 1.样式设计
+> vim  ~/.banner
+``` bash
+#!/bin/bash
 
-Debian 11 • Docker • Luna by Yuuki
+clear
+
+echo "Debian 11 • Docker • 🎖️  LianPo by Mq  ⚔️  ⚔️  ⚔️ "
+echo
+
+neofetch
 ```
 
-### 优化简化版
+### 2.利用bashrc呈现
+> vim ~/.bashrc 
+> 增加内容
+``` bash
+#-- 添加banner
+if [[ $SHLVL -eq 1 ]]; then
+    ~/.banner
+fi
 ```
-🌙 Luna • Debian 11 • Docker • tg-signer
-```
-搭配执行：`neofetch`，避免界面元素杂乱。
 
 ## 十、当前成果
 ### 已完成配置项
