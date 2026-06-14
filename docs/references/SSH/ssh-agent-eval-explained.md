@@ -1,4 +1,8 @@
 # eval "$(ssh-agent -s)" 干了什么?
+``` bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519_github
+```
 eval "$(ssh-agent -s)" 这行命令的关键其实不是 `ssh-agent`，而是 **`eval` 在干什么**。
 
 我们拆开讲：
