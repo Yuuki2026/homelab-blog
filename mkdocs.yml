@@ -2,6 +2,8 @@ site_name: Yuuki's Homelab
 
 theme:
   name: material
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
 
   features:
     - content.code.copy
