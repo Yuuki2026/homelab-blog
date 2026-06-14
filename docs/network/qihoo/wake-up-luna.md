@@ -112,9 +112,9 @@ esac
 chmod +x /usr/bin/wol
 ```
 
-> 使用方法 /
-> wol luna /
-> wol lianpo /
+> 使用方法  
+> wol luna   
+> wol lianpo  
 
 后续如有添加,加一行case就行
 ``` bash 
