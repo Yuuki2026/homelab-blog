@@ -2,12 +2,13 @@
 ## 为什么会有这篇简单的文章
   每次都要输入etherwake -i br-lan 00:E0:66:CA:C5:E9唤醒,导致我想像linux中一样,做个别名写入bashrc中.然后我去搜索op系统中的路径,完全忘记了还有写命令这一个方法(用习惯alias了)
   其实用别名有点弊端
+
   - cron 不会读取 alias
   - 不可被脚本调用
   - 依赖登陆
 
 ## op中相当于bashrc的目录文件在哪里?
-### sHell 初始化文件（shell initialization files）或者说 启动配置文件（startup / environment configuration files）在哪里?
+### shell 初始化文件（shell initialization files）或者说 启动配置文件（startup / environment configuration files）在哪里?
 ``` bash
 /etc/profile #全局登录 shell 初始化脚本（global login shell init）
 
@@ -111,9 +112,9 @@ esac
 chmod +x /usr/bin/wol
 ```
 
-> 使用方法 \
-> wol luna \
-> wol lianpo \
+> 使用方法\
+> wol luna\
+> wol lianpo\
 
 后续如有添加,加一行case就行
 ``` bash 
