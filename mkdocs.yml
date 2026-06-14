@@ -1,0 +1,4 @@
+site_name: Yuuki's Homelab
+site_url: https://yuuki2026.github.io
+theme:
+  name: material
