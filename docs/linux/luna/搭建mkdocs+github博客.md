@@ -24,9 +24,7 @@ GitHub Pages
 https://yuuki2026.github.io/homelab-blog/
 ```
 
----
-
-# MkDocs 安装
+## MkDocs 安装
 
 安装：
 
@@ -54,9 +52,7 @@ mkdocs serve
 http://127.0.0.1:8000
 ```
 
----
-
-# Material 主题
+## Material 主题
 
 最小配置：
 
@@ -92,14 +88,12 @@ theme:
 
 功能：
 
-* Material主题
-* 代码复制按钮
-* 深色模式
-* 浅色模式
+- Material主题
+- 代码复制按钮
+- 深色模式
+- 浅色模式
 
----
-
-# Git 初始化
+## Git 初始化
 
 初始化仓库：
 
@@ -121,11 +115,9 @@ git remote add origin git@github.com:Yuuki2026/homelab-blog.git
 git remote -v
 ```
 
----
+## SSH Key 配置
 
-# SSH Key 配置
-
-## 为什么不用 HTTPS
+### 为什么不用 HTTPS
 
 HTTPS：
 
@@ -140,9 +132,7 @@ SSH：
 更适合长期使用
 ```
 
----
-
-## 创建 GitHub 专用密钥
+### 创建 GitHub 专用密钥
 
 生成：
 
@@ -159,9 +149,7 @@ ssh-keygen -t ed25519 \
 ~/.ssh/id_ed25519_github.pub
 ```
 
----
-
-## 上传公钥
+### 上传公钥
 
 查看：
 
@@ -182,9 +170,7 @@ GitHub
 
 添加公钥。
 
----
-
-# SSH Config 配置
+## SSH Config 配置
 
 文件：
 
@@ -203,9 +189,7 @@ Host github.com
     IdentitiesOnly yes
 ```
 
----
-
-# 为什么使用 443 端口
+### 为什么使用 443 端口
 
 默认：
 
@@ -227,9 +211,9 @@ ssh.github.com:443
 
 优点：
 
-* 穿透能力更强
-* 与 HTTPS 同端口
-* 更稳定
+- 穿透能力更强
+- 与 HTTPS 同端口
+- 更稳定
 
 本质仍然是：
 
@@ -239,9 +223,7 @@ SSH协议
 
 并不是 HTTPS 登录。
 
----
-
-# SSH 测试
+## SSH 测试
 
 测试：
 
@@ -256,9 +238,7 @@ Hi Yuuki2026!
 You've successfully authenticated.
 ```
 
----
-
-# SSH Agent
+## SSH Agent
 
 避免每次输入密钥密码：
 
@@ -282,9 +262,7 @@ ssh-add -l
 
 之后本次开机期间无需重复输入。
 
----
-
-# GitHub Pages
+## GitHub Pages
 
 采用：
 
@@ -298,9 +276,7 @@ GitHub Actions 自动部署
 mkdocs gh-deploy
 ```
 
----
-
-# GitHub Actions 自动部署
+## GitHub Actions 自动部署
 
 目录：
 
@@ -330,9 +306,7 @@ git push
 mkdocs gh-deploy
 ```
 
----
-
-# Git 基础概念
+## Git 基础概念
 
 Git 有三个重要区域：
 
@@ -352,9 +326,7 @@ git commit -m "更新内容"
 git push
 ```
 
----
-
-# 分支概念
+### 分支概念
 
 本地：
 
@@ -391,9 +363,7 @@ git pull
 
 即可。
 
----
-
-# 创建分支
+### 创建分支
 
 创建：
 
@@ -413,9 +383,7 @@ git branch
 git checkout main
 ```
 
----
-
-# 合并分支
+### 合并分支
 
 切回主分支：
 
@@ -429,9 +397,7 @@ git checkout main
 git merge feature/openwrt
 ```
 
----
-
-# 删除分支
+### 删除分支
 
 删除：
 
@@ -445,9 +411,7 @@ git branch -d feature/openwrt
 git branch -D feature/openwrt
 ```
 
----
-
-# Git Commit Hash
+## Git Commit Hash
 
 每个提交都有唯一 ID：
 
@@ -474,9 +438,7 @@ git commit --amend
 
 Git 会认为是不同历史。
 
----
-
-# Force Push
+## Force Push
 
 当修改历史后：
 
@@ -508,9 +470,7 @@ git push --force-with-lease
 --force
 ```
 
----
-
-# 常用命令速查
+## 常用命令速查
 
 查看状态：
 
@@ -560,9 +520,7 @@ ssh -T git@github.com
 ssh-add -l
 ```
 
----
-
-# 当前推荐工作流
+## 当前推荐工作流
 
 新增文章：
 
@@ -587,4 +545,5 @@ https://yuuki2026.github.io/homelab-blog/
 ```
 
 即可查看更新。
+
 
