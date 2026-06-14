@@ -35,7 +35,7 @@ logger "PC wake triggered"
 ```
 ### 3、灵活性高--可参数化
 ``` bash 
-/usr/bin/wol 
+vim /usr/bin/wol 
 ```
 ``` bash
 #!/bin/sh
