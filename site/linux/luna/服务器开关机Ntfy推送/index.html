@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/">
       
-      
-        <link rel="next" href="../%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%85%B3%E6%9C%BANtfy%E6%8E%A8%E9%80%81/">
       
       
         
@@ -23,7 +21,7 @@
     
     
       
-        <title>测试 - Yuuki's Homelab</title>
+        <title>服务器开机/关机 Ntfy 推送提醒配置文档 - Yuuki's Homelab</title>
       
     
     
@@ -74,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#ntfy" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              测试
+              服务器开机/关机 Ntfy 推送提醒配置文档
             
           </span>
         </div>
@@ -382,19 +380,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE/" class="md-nav__link">
         
   
   
@@ -410,7 +399,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -420,10 +408,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E5%85%B3%E6%9C%BANtfy%E6%8E%A8%E9%80%81/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    服务器开机/关机 Ntfy 推送提醒配置文档
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -439,6 +454,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置准备
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -479,6 +536,36 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文档说明
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置准备
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -494,8 +581,210 @@
 
 
 
-<h1 id="_1">测试</h1>
-<p>是否更新</p>
+<h1 id="ntfy">服务器开机/关机 Ntfy 推送提醒配置文档</h1>
+<h2 id="_1">文档说明</h2>
+<ul>
+<li>
+<p>功能：服务器<strong>开机完成、关机/重启</strong>时，自动通过 Ntfy 推送通知到安卓手机</p>
+</li>
+<li>
+<p>适配环境：Ubuntu/Debian 系 Linux</p>
+</li>
+<li>
+<p>核心优势：规避系统代理、网络超时容错、不影响开关机速度、全程后台自启</p>
+</li>
+<li>
+<p>编辑器：全程使用 <strong>vim</strong>（替代 nano）</p>
+</li>
+<li>
+<p>专属 Ntfy 主题：<code>xxxxxxxxx(替换为自己的)</code></p>
+</li>
+</ul>
+<h2 id="_2">前置准备</h2>
+<ol>
+<li>
+<p>安卓手机安装 Ntfy 客户端，订阅主题：<code>xxxxxxxx(输入自己的)</code></p>
+</li>
+<li>
+<p>服务器已安装 curl：<code>sudo apt install curl -y</code></p>
+</li>
+<li>
+<p>服务器已清理无效代理配置，脚本内置清空代理逻辑，杜绝连接超时</p>
+</li>
+</ol>
+<h1 id="_3">一、配置服务器开机推送提醒</h1>
+<h3 id="1">1. 编写开机通知脚本</h3>
+<p>创建开机推送脚本文件：</p>
+<pre><code class="language-bash">sudo vim /usr/local/bin/boot-notify.sh
+</code></pre>
+<p>粘贴以下完整脚本内容（已优化网络等待、清空代理、信息展示）：</p>
+<pre><code class="language-bash">#!/bin/bash
+
+# Ntfy 专属主题
+TOPIC=&quot;(输入自己的主题)&quot;
+NTFY_URL=&quot;https://ntfy.sh/$TOPIC&quot;
+
+# 等待系统网络完全初始化（解决开机无网推送失败问题）
+sleep 20
+
+# 推送消息内容（展示主机名、IP、开机时间）
+MSG=&quot;✅ 服务器开机完成
+主机名: $(hostname)
+IP: $(hostname -I)
+时间: $(date '+%Y-%m-%d %H:%M:%S')&quot;
+
+# 强制清空全局代理，避免推送走代理超时
+unset http_proxy https_proxy all_proxy
+
+# 发送推送（3秒超时兜底，不阻塞系统）
+curl -m 3 \
+     -H &quot;Title: 服务器开机提醒&quot; \
+     -H &quot;Priority: high&quot; \
+     -d &quot;$MSG&quot; \
+     &quot;$NTFY_URL&quot;
+</code></pre>
+<p><strong>vim 保存退出操作</strong>：按 <code>Esc</code> → 输入 <code>:wq</code> → 回车</p>
+<h3 id="2">2. 添加脚本执行权限</h3>
+<pre><code class="language-bash">sudo chmod +x /usr/local/bin/boot-notify.sh
+</code></pre>
+<h3 id="3-systemd">3. 创建 systemd 开机服务</h3>
+<p>创建系统服务配置文件：</p>
+<pre><code class="language-bash">sudo vim /etc/systemd/system/boot-notify.service
+</code></pre>
+<p>粘贴以下服务配置：</p>
+<pre><code class="language-ini">[Unit]
+Description=服务器开机 Ntfy 推送通知服务
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/boot-notify.sh
+User=yuuki
+
+[Install]
+WantedBy=multi-user.target
+</code></pre>
+<p>保存退出（<code>Esc</code> → <code>:wq</code> → 回车）</p>
+<h3 id="4">4. 启用并测试开机服务</h3>
+<pre><code class="language-bash"># 重载系统服务配置
+sudo systemctl daemon-reload
+
+# 设置开机自启
+sudo systemctl enable boot-notify
+
+# 手动测试推送（无需重启服务器）
+sudo systemctl start boot-notify
+
+# 查看服务运行日志（排查报错）
+journalctl -u boot-notify
+</code></pre>
+<p>执行测试命令后，手机收到推送即代表配置成功。</p>
+<h1 id="_4">二、配置服务器关机/重启推送提醒</h1>
+<h3 id="1_1">1. 编写关机通知脚本</h3>
+<p>创建关机推送脚本文件：</p>
+<pre><code class="language-bash">sudo vim /usr/local/bin/shutdown-notify.sh
+</code></pre>
+<p>粘贴以下完整脚本内容：</p>
+<pre><code class="language-bash">#!/bin/bash
+
+# Ntfy 专属主题
+TOPIC=&quot;(输入自己的主题)&quot;
+NTFY_URL=&quot;https://ntfy.sh/$TOPIC&quot;
+
+# 推送消息内容
+MSG=&quot;⚠️ 服务器即将关机/重启
+主机名: $(hostname)
+时间: $(date '+%Y-%m-%d %H:%M:%S')&quot;
+
+# 强制清空全局代理
+unset http_proxy https_proxy all_proxy
+
+# 快速推送（3秒超时，不阻塞关机流程）
+curl -m 3 \
+     -H &quot;Title: 服务器关机提醒&quot; \
+     -H &quot;Priority: high&quot; \
+     -d &quot;$MSG&quot; \
+     &quot;$NTFY_URL&quot;
+</code></pre>
+<p>保存退出（<code>Esc</code> → <code>:wq</code> → 回车）</p>
+<h3 id="2_1">2. 添加脚本执行权限</h3>
+<pre><code class="language-bash">sudo chmod +x /usr/local/bin/shutdown-notify.sh
+</code></pre>
+<h3 id="3-systemd_1">3. 创建 systemd 关机服务</h3>
+<p>创建关机专属服务配置：</p>
+<pre><code class="language-bash">sudo vim /etc/systemd/system/shutdown-notify.service
+</code></pre>
+<p>粘贴以下配置（核心：不阻塞关机流程、优先执行推送）：</p>
+<pre><code class="language-ini">[Unit]
+Description=服务器关机/重启 Ntfy 推送通知服务
+DefaultDependencies=no
+Before=shutdown.target reboot.target halt.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/shutdown-notify.sh
+TimeoutSec=10
+
+[Install]
+WantedBy=shutdown.target reboot.target halt.target
+</code></pre>
+<p>保存退出</p>
+<h3 id="4_1">4. 启用关机推送服务</h3>
+<pre><code class="language-bash"># 重载服务配置
+sudo systemctl daemon-reload
+
+# 绑定关机/重启事件自触发
+sudo systemctl enable shutdown-notify
+
+# 手动测试脚本
+sudo /usr/local/bin/shutdown-notify.sh
+
+# 查看运行日志
+journalctl -u shutdown-notify
+</code></pre>
+<h1 id="_5">三、关键优化说明（必看）</h1>
+<ul>
+<li>
+<p><strong>不影响开关机速度</strong>：关机服务采用并行执行模式，curl 设置3秒超时、服务10秒兜底超时，不会卡死系统</p>
+</li>
+<li>
+<p><strong>代理彻底规避</strong>：所有脚本内置 <code>unset</code> 清空代理命令，完美解决之前 Clash 代理超时问题</p>
+</li>
+<li>
+<p><strong>开机容错</strong>：开机脚本延迟20秒执行，等待网卡、网络服务完全初始化，杜绝开机无网推送失败</p>
+</li>
+<li>
+<p><strong>优先级适配</strong>：推送设置高优先级，手机弹窗提醒，和 Bark 强提醒效果一致</p>
+</li>
+</ul>
+<h1 id="_6">四、常用运维命令</h1>
+<pre><code class="language-bash"># 关闭开机推送自启
+sudo systemctl disable boot-notify
+
+# 关闭关机推送自启
+sudo systemctl disable shutdown-notify
+
+# 实时查看开机推送日志
+journalctl -fu boot-notify
+
+# 实时查看关机推送日志
+journalctl -fu shutdown-notify
+</code></pre>
+<h1 id="_7">五、最终效果</h1>
+<ol>
+<li>
+<p>服务器开机完成后20秒，手机收到【服务器开机提醒】推送，包含主机信息、开机时间</p>
+</li>
+<li>
+<p>服务器执行关机/重启瞬间，手机收到【服务器关机提醒】推送</p>
+</li>
+<li>
+<p>全程无卡顿、无报错，稳定复用个人专属 Ntfy 通道</p>
+</li>
+</ol>
+<blockquote>
+<p>（注：文档部分内容可能由 AI 生成）</p>
+</blockquote>
 
 
 
