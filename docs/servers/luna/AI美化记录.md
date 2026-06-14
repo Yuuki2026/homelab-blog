@@ -187,7 +187,7 @@ yuuki @Luna ~
 - 命令执行耗时统计
 - Nerd Font 图标渲染
 
-## 九、美化prompt
+## 九、美化Login banner
 ### 1.样式设计
 > vim  ~/.banner
 ``` bash
