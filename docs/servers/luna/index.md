@@ -1,6 +1,6 @@
 # luna的记录
 
-![debian](https://w.wallhaven.cc/full/qz/wallhaven-qzeez5.png)
+![debian](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb5qU0yiXJOsiwd8sCd7KQr2kqmu3X7cZO705Saa2JZw&s=10)
 
 ## 基本信息
 - 系统：debian11
