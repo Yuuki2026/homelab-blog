@@ -1,5 +1,4 @@
 # 唤醒配置成命令
-![qihoo370T7](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpaU6grt81avxg5qyYGlt7quswfElEdMThOzPW4BxCAQ&s=10)
 ## 为什么会有这篇简单的文章
   每次都要输入etherwake -i br-lan 00:E0:66:CA:C5:E9唤醒,导致我想像linux中一样,做个别名写入bashrc中.然后我去搜索op系统中的路径,完全忘记了还有写命令这一个方法(用习惯alias了)
   其实用别名有点弊端
