@@ -1,5 +1,7 @@
 # luna的记录
 
+![debian](https://w.wallhaven.cc/full/qz/wallhaven-qzeez5.png)
+
 ## 基本信息
 - 系统：debian11
 - 用途：家用服务器
