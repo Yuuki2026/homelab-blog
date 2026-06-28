@@ -7,7 +7,7 @@
 - CPU : i3-4170   
 - GPU : Intel HD Graphics 4400 1536 MB  
 - 内存: 2*4G 1600 MHz DDR3  
-- 网卡: AX210  
+- 网卡: Broadcom BCM4360 802.11ac Dual Band Wireless Network Adapter
 
 ## 使用情况
 - Catalina 10.15.7 ✅  (其余系统未尝试)  
