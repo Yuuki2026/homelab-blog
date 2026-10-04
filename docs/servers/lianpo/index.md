@@ -1,6 +1,7 @@
 # lianpo的记录
 
-![debian](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb5qU0yiXJOsiwd8sCd7KQr2kqmu3X7cZO705Saa2JZw&s=10)
+![Lianpo](../../assets/lianpo/Lianpo.jpg)
+
 
 ## 基本信息
 - 系统：debian11
