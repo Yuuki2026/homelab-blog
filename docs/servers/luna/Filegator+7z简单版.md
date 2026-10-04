@@ -1,4 +1,4 @@
-> ### Filegator+7z 简单实现内外网文件的加密流转(恢复记忆版)
+ ### Filegator+7z 简单实现内外网文件的加密流转(恢复记忆版)
 
 ---
 
@@ -6,7 +6,7 @@
 
 ### 一、安装
 
-~~ bash
+``` bash
 docker run -d \
   --name filegator \
   -p 8888:80 \
@@ -14,7 +14,7 @@ docker run -d \
   --restart unless-stopped \
   -v /home/yuuki/filegator_files:/var/www/filegator/repository \
   filegator/filegator
-~~
+```
 
 默认账户:admin
 
