@@ -284,11 +284,11 @@ volume : filegator_private:/var/lib/docker/volumes/... -> /var/www/filegator/pri
 
 ### 一、重写7z压缩脚本
 
-~~ bash
+``` bash
 vim /usr/local/bin/myenc
-~~
+```
 
-~~ bash
+``` bash
 #!/usr/bin/env bash
 
 set -e
@@ -308,11 +308,11 @@ shift
     -p \
     "$archive" \
     "$@"
-~~
+```
 
-~~ bash
+``` bash
 chmod +x /usr/local/bin/myenc
-~~
+```
 
 
 
